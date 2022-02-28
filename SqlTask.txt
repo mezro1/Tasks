@@ -1,0 +1,31 @@
+CREATE TABLE Employess (
+  id INTEGER PRIMARY KEY,
+  Name TEXT NOT NULL,
+  Surname TEXT NOT NULL,
+  Role Text NOT NULL,
+  Salary INTEGER Not null
+);
+
+
+
+
+INSERT INTO Employess VALUES (1,'John', 'Doe', 'Role1', 1500);
+INSERT INTO Employess VALUES (2,'John', 'Smith', 'Role2', 700);
+INSERT INTO Employess VALUES (3,'Robert', 'Williams', 'Role1', 1200);
+INSERT INTO Employess VALUES (4,'Michael', 'Brown', 'Role2', 600);
+INSERT INTO Employess VALUES (5,'David', 'Miller', 'Role2', 650);
+
+
+
+
+select Role,Salary FROM Employess order by Salary desc
+select * FROM Employess order by Salary desc
+
+SELECT Role,  sum(Salary )  FROM Employess group by  Role 
+
+
+SELECT PriceList, Count(PriceList )as DublicatesCoun  FROM PriceList group by  PriceList 
+
+SELECT PriceList, Product Count(PriceList )as DublicatesCoun  FROM PriceList group by  PriceList 
+
+
